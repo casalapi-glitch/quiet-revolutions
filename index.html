@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9"><meta name="description" content="A listening room in Cebu. Explore the Quiet Revolutions vinyl collection.">
+  <title>Quiet Revolutions — Vinyl Collection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Quiet Revolutions home">
+      <span class="logo-slot"><img src="assets/quiet-revolutions-logo.jpg" alt="Quiet Revolutions — Vinyl Street Art Cebu Philippines" onerror="this.parentElement.classList.add('missing');this.remove()"><span class="logo-note">Quiet Revolutions<br><b>VINYL · CEBU</b></span></span>
+      <span class="brand-caption">A listening room<br>in Cebu, Philippines</span>
+    </a>
+    <nav aria-label="Main navigation"><a href="#collection">The collection</a><a href="#about">About</a></nav>
+    <a class="top-cta" href="#collection">Explore records <span aria-hidden="true">↘</span></a>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> CEBU CITY · EST. IN THE EVERYDAY</p>
+        <h1 id="hero-title">Records for<br><em>the in-between.</em></h1>
+        <p class="intro">A living collection of sounds, stories and sleeves. Pull up a chair, find a record, stay for the whole side.</p>
+        <a href="#collection" class="circle-link"><span>Enter<br>the collection</span><b aria-hidden="true">↘</b></a>
+      </div>
+      <div class="hero-art" aria-label="Featured records from the listening room">
+        <div class="hero-stamp">ISSUE<br><b>001</b><br>CEBU</div>
+        <div class="sleeve sleeve-back"><div class="back-sun"></div><small>THE LISTENING ROOM<br>CEBU, PH</small></div>
+        <div class="sleeve sleeve-front"><div class="cover-lines"></div><div class="cover-copy"><small>QUIET REVOLUTIONS</small><strong>A ROOM<br>FOR<br>RECORDS</strong><span>LISTENING ROOM · CEBU</span></div></div>
+        <div class="art-caption"><span>01 / 03</span><span>LISTEN CLOSELY&nbsp; ↗</span></div>
+      </div>
+      <div class="hero-bottom"><span>AN OPEN INVITATION TO LISTEN</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+    <section class="collection" id="collection">
+      <div class="section-head"><div><p class="eyebrow">A FEW FROM THE SHELVES&nbsp; / &nbsp; 2026</p><h2>Find your<br><em>next side.</em></h2></div><p class="section-note">Every sleeve holds a different world.<br>Start anywhere.</p></div>
+      <div class="toolbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search artist or album" autocomplete="off"><button id="clear" aria-label="Clear search" hidden>×</button></label><div class="filters" role="group" aria-label="Filter by genre"><button class="filter active" data-genre="All">All sounds <sup id="count">00</sup></button></div></div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <div class="empty" id="empty" hidden><span>THE SHELVES ARE WAITING</span><p>The collection will appear here once records are added.</p><button id="reset" hidden>Show the whole collection ↗</button></div>
+      <div class="collection-foot"><span>MORE TO COME, ONE SIDE AT A TIME.</span><span><b id="recordTotal">00</b> RECORDS IN THE ROOM&nbsp; ↗</span></div>
+    </section>
+    <section class="note-section" id="about"><div class="note-mark">QR<span>·</span></div><div><p class="eyebrow">A NOTE FROM THE LISTENING ROOM</p><h2>Good music makes<br><em>room for everyone.</em></h2><p>Quiet Revolutions is a café, a corner to slow down, and a collection built to be heard together. Find us in Cebu. Stay for another side.</p><a href="#top" class="text-link">Back to the beginning ↑</a></div><div class="note-index">QR<br>CEBU<br>PH</div></section>
+  </main>
+  <footer><span>QUIET REVOLUTIONS&nbsp; · &nbsp;VINYL STREET ART</span><span>CEBU, PHILIPPINES&nbsp; © 2026 &nbsp; · &nbsp; <a class="owner-link" href="admin.html">OWNER SIGN IN</a></span></footer>
+  <dialog id="detail"><button class="close" aria-label="Close album details">×</button><div id="detailContent"></div></dialog>
+  <script src="supabase-config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="app.js"></script>
+</body>
+</html>

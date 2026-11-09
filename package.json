@@ -1,0 +1,7 @@
+{
+  "name": "quiet-revolutions-vinyl-gallery",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}
